@@ -1690,13 +1690,13 @@ outline: 1px dotted #000000;
 {
   from
   {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
   }
   to
   {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
   }
 }
 
@@ -1704,13 +1704,13 @@ outline: 1px dotted #000000;
 {
   from
   {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
   }
   to
   {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
   }
 }
 
