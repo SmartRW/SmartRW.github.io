@@ -1,2 +1,2 @@
 # SmartRW.github.io
-Test repo
+Репозитирий для публикации проекта.
