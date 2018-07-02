@@ -76,3 +76,78 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+
+var controls = document.querySelector('.slider-label-list');
+var slider1 = document.querySelector('.slide-1');
+var slider2 = document.querySelector('.slide-2');
+var slider3 = document.querySelector('.slide-3');
+var control1 = document.querySelector('label[for="control-1"]');
+var control2 = document.querySelector('label[for="control-2"]');
+var control3 = document.querySelector('label[for="control-3"]');
+var radio1 = document.querySelector('.control-1');
+var radio2 = document.querySelector('.control-2');
+var radio3 = document.querySelector('.control-3');
+var table = document.querySelector('.slide-1 .slider-feature');
+controlsPosition = table.offsetHeight + 44;
+controls.style.bottom = controlsPosition + 'px';
+console.log(controlsPosition);
+
+control1.addEventListener('click', function (evt) {
+  var table = document.querySelector('.slide-1 .slider-feature');
+  slider1.style.display = 'flex';
+  slider2.style.display = 'none';
+  slider3.style.display = 'none';
+  controlsPosition = table.offsetHeight + 44;
+  controls.style.bottom = controlsPosition + 'px';
+  console.log(controlsPosition);
+});
+
+control2.addEventListener('click', function (evt) {
+  var table = document.querySelector('.slide-2 .slider-feature');
+  slider1.style.display = 'none';
+  slider2.style.display = 'flex';
+  slider3.style.display = 'none';
+  controlsPosition = table.offsetHeight + 44;
+  controls.style.bottom = controlsPosition + 'px';
+  console.log(controlsPosition);
+});
+
+control3.addEventListener('click', function (evt) {
+  var table = document.querySelector('.slide-3 .slider-feature');
+  slider1.style.display = 'none';
+  slider2.style.display = 'none';
+  slider3.style.display = 'flex';
+  controlsPosition = table.offsetHeight + 44;
+  controls.style.bottom = controlsPosition + 'px';
+  console.log(controlsPosition);
+});
+
+radio1.addEventListener('focus', function (evt) {
+  var table = document.querySelector('.slide-1 .slider-feature');
+  slider1.style.display = 'flex';
+  slider2.style.display = 'none';
+  slider3.style.display = 'none';
+  controlsPosition = table.offsetHeight + 44;
+  controls.style.bottom = controlsPosition + 'px';
+  console.log(controlsPosition);
+});
+
+radio2.addEventListener('focus', function (evt) {
+  var table = document.querySelector('.slide-2 .slider-feature');
+  slider1.style.display = 'none';
+  slider2.style.display = 'flex';
+  slider3.style.display = 'none';
+  controlsPosition = table.offsetHeight + 44;
+  controls.style.bottom = controlsPosition + 'px';
+  console.log(controlsPosition);
+});
+
+radio3.addEventListener('focus', function (evt) {
+  var table = document.querySelector('.slide-3 .slider-feature');
+  slider1.style.display = 'none';
+  slider2.style.display = 'none';
+  slider3.style.display = 'flex';
+  controlsPosition = table.offsetHeight + 44;
+  controls.style.bottom = controlsPosition + 'px';
+  console.log(controlsPosition);
+});
