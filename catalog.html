@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize-min.css">
     <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body>
@@ -102,8 +101,12 @@
             <fieldset class="filter-price">
               <legend>Стоимость</legend>
               <div class="price-range">
-                <span class="min-price"></span>
-                <span class="max-price"></span>
+                <span class="min-price">
+                  <span class="visually-hidden">Минимальная цена</span>
+                </span>
+                <span class="max-price">
+                  <span class="visually-hidden">Максимальная цена</span>
+                </span>
               </div>
                 <span class="price-range-figure">от 0</span>
                 <span class="price-range-figure">до 5000</span>
@@ -168,10 +171,14 @@
               </ul>
               <ul class="ranking-list">
                 <li class="ranking-asc">
-                  <a class="ranking-current" title="По возрастанию"></a>
+                  <a class="ranking-current" title="По возрастанию">
+                    <span class="visually-hidden">По возрастанию</span>
+                  </a>
                 </li>
                 <li class="ranking-desc">
-                  <a href="#" title="По убыванию"></a>
+                  <a href="#" title="По убыванию">
+                    <span class="visually-hidden">По убыванию</span>
+                  </a>
                 </li>
               </ul>
             </div>
