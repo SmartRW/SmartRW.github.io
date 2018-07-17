@@ -2121,6 +2121,13 @@ outline: 1px dotted #000000;
       transform: scale(1.1);
 }
 
+.min-price:active,
+.max-price:active
+{
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .price-range-figure
 {
   margin-right: 58px;
