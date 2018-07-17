@@ -1,3 +1,5 @@
+// Оживление модальных окон
+
 var feedbackButton = document.querySelector('.write-us-button');
 var feedbackModal = document.querySelector('.modal-feedback');
 var feedbackClose = feedbackModal.querySelector('.modal-close');
@@ -76,3 +78,29 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+
+// Оживление главного слайдера
+
+var sliderControls = document.querySelectorAll('.control-button');
+var checkedSliderControl = document.querySelector('.current-control');
+var slides = document.querySelectorAll('.slides');
+var visibleSlide = document.querySelector('.slide-visible');
+
+for (var i = 0; i < sliderControls.length; i++) {
+  sliderControls[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    if(!this.classList.contains('current-control')) {
+      checkedSliderControl.classList.remove('current-control');
+      checkedSliderControl = this;
+      this.classList.add('current-control');
+
+      for (var j = 0; j < slides.length; j++) {
+        if (sliderControls[j].classList.contains('current-control')) {
+          visibleSlide.classList.remove('slide-visible');
+          slides[j].classList.add('slide-visible');
+          visibleSlide = slides[j];
+        }
+      }
+    }
+  })
+};

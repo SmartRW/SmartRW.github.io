@@ -1,5 +1,4 @@
 /* cyrillic-ext */
-/* cyrillic-ext */
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -594,9 +593,9 @@ img
   -webkit-box-pack: justify;
      -ms-flex-pack: justify;
   justify-content: space-between;
-  position: relative;
-  left: 359px;
-  bottom: 25px;
+  position: absolute;
+  right: 83px;
+  bottom: 134px;
   z-index: 1;
   width: 78px;
   list-style: none;
@@ -643,7 +642,7 @@ img
   background-image: linear-gradient(180deg, #f7e296 0px, #f7e296 113px, #ffffff 113px, #ffffff 100%);
 }
 
-.slide-show
+.slide-visible
 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,7 +759,7 @@ img
 
 .slider-feature
 {
-  margin-top: 34px;
+  margin-top: 45px;
   padding-bottom: 7px;
 }
 
