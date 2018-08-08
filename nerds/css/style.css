@@ -280,6 +280,7 @@ body {
   border-radius: 50%;
   padding: 5px;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .slider-control-current::before {
